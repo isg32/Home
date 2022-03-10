@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>ISG's website</title>
+    {% endif %}
+    <meta name="description" content="Sapan Gajjar's Personal Website">
+    <meta name="author" content="Sapan Gajjar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/isg32/website/main/static/css/style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/isg32/website/main/static/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <div id="img-gallery">
+      </div>
+      <h1>Sapan <span>Gajjar</span></h1>
+      <form id="site-search">
+	<input type="text" placeholder="Search Site">
+	<button>go</button>
+      </form>
+      <nav>
+	<span>[<a href="/">Home</a>]</span>
+	<span>[<a href="https://raw.githubusercontent.com/isg32/website/main/content/about.md">About</a>]</span>
+	<span>[<a href="https://github.com/isg32/website/tree/main/content/blog">Blog</a>]</span>
+	<span>[<a href="https://github.com/isg32/" target="_blank">Github</a>]</span>
+	<span>[<a href="https://raw.githubusercontent.com/isg32/website/main/content/contact.md">Contact</a>]</span>
+      </nav>
+	<script src="https://raw.githubusercontent.com/isg32/website/main/static/js/script.js"></script>
+      <blockquote id="header-quote">
+	❝ The world is based on binary, ask why ?<br>
+	<span>becaus the-maybe- in yes and no, it complicate things. ❞</span>
+      </blockquote>
+      <center>
+	<img src="https://sadgrl.online/images/new/open.gif">
+      </center>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <div>
+	<a href="https://landchad.net">
+	  <img src="https://landchad.net/pix/landchad.gif" target="_blank" alt="LandChad.net">
+	</a>
+	<a href="https://www.freebsd.org">
+	  <img src="https://www.freebsd.org/gifs/power-button.gif" target="_blank" alt="LandChad.net">
+	</a>
+	<a href="https://wiby.me">
+	  <img src="https://wiby.me/about/wiby.gif" target="_blank" alt="LandChad.net">
+	</a>
+	<a href="https://sadgrl.online/">
+	  <img src="https://sadgrl.online/images/new/button-new.gif" target="_blank" alt="sadgrl online"></a>
+      </div>
+      <p id="footer-note">
+	&copy Copyright 2022
+	<a href="/">Sapan Gajjar</a>.
+	All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

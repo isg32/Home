@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Marck+Script&family=Rye&display=swap');
+
+:root {
+    --fg-color: #ffffff;
+    --bg-color: #000;
+    --color00: #E1578A;
+    --color01: #FF69EB;
+    --color02: #FF86C8;
+    --color03: #FFA3A5;
+    --color04: #FFBF81;
+    --color05: #FFDC5E;
+    --color06: #FDFF8F;
+}
+
+body{
+    padding: 1em;
+    max-width: 2000px;
+    margin: auto;
+    font-family: 'Lora', serif;
+    line-height: 1.4em;
+    color: var(--fg-color);
+	background-color: var(--bg-color);
+	background-image: url(https://gifimage.net/wp-content/uploads/2017/09/black-aesthetic-gif-12.gif);
+}
+
+/** Elements **/
+
+a{
+    text-decoration: none;
+    color: var(--color01);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--color02);
+}
+
+#header-quote{
+    font-family: 'Marck Script', cursive;
+    line-height: 1.5em;
+    font-size: 130%;
+}
+
+blockquote span{
+    margin-left: 20%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Chonburi', cursive;
+    color: var(--color03);
+}
+
+
+/** Header **/
+header{
+    max-width: 800px;
+    float:right;
+    padding: 10px;
+}
+
+header h1{
+    font-size: 300%;
+    font-family: 'Chonburi', cursive;
+}
+
+header h1 span{
+    color: purple;
+}
+
+/** Image Gallery **/
+#img-gallery img{
+    max-width: 240px;
+    vertical-align: top;
+}
+
+
+/** Nav Bar **/
+nav{
+    padding: 5px;
+    margin: 10px;
+}
+
+nav a{
+    margin: 5px;
+}
+
+nav span{
+    margin: 10px;
+}
+
+/** main section **/
+main{
+    padding: 10px;
+    max-width: 900px;
+    border-bottom: 1px solid var(--color00);
+}
+
+main img{
+	display: block;
+	margin: 0 auto;
+    max-width: 700px;
+}
+
+.blog-heading{
+    text-align: center;
+}
+
+
+/** List Blog Page **/
+
+#blog-list{
+	padding: 10px;
+	margin: 10px;
+}
+
+#blog-summary{
+	padding: 10px;
+}
+#blog-summary h3{
+	border-bottom: 1px solid white;
+	margin-bottom: 2px;
+	padding: 5px;
+}
+
+
+.subtitle{
+	font-style: italic;
+}
+
+#cont-read{
+	color: var(--color05);
+}
+
+
+/** Footer **/
+footer{
+    padding: 20px;
+}
+
+
+/** First Media Query **/
+@media only screen and (max-width: 1700px) {
+    body{
+	max-width: 1000px;
+	margin: auto;
+    }
+    header{
+	border-bottom: 1px solid var(--fg-color);
+	margin: auto;
+	float: none;
+	text-align: center;
+    }
+}
+
+
+/** Second Media Query **/
+@media only screen and (max-width: 600px) {
+    body{
+	padding: 0.5em;
+	font-size: 85%;
+    }
+    header h1{
+	font-size: 180%;
+    }
+    h1{
+	font-size: 140%;
+    }
+    #img-gallery img{
+	max-width: 90px;
+    }
+    main img{
+	max-width: 250px;
+    }
+}
+
+
