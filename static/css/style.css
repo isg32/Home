@@ -59,11 +59,9 @@ header{
 
 header h1{
     font-size: 300%;
-    font-family: 'Chonburi', cursive;
 }
 
 header h1 span{
-    color: purple;
 }
 
 /** Image Gallery **/
@@ -103,33 +101,6 @@ main img{
 .blog-heading{
     text-align: center;
 }
-
-
-/** List Blog Page **/
-
-#blog-list{
-	padding: 10px;
-	margin: 10px;
-}
-
-#blog-summary{
-	padding: 10px;
-}
-#blog-summary h3{
-	border-bottom: 1px solid white;
-	margin-bottom: 2px;
-	padding: 5px;
-}
-
-
-.subtitle{
-	font-style: italic;
-}
-
-#cont-read{
-	color: var(--color05);
-}
-
 
 /** Footer **/
 footer{
