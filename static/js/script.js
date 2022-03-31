@@ -3,7 +3,7 @@ function randomNumber(min, max) {
 } 
 
 function getRandomImage() {
-    path = '/website/static/pics/'
+    path = '/Home/static/pics/'
     var num = randomNumber(1000, 1194);
     var img = path + num + '.jpg';
     return img;
